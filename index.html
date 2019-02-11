@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" 
+              integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  			  
+</head>	
+<style>
+
+.navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+  }
+
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #f4511e !important;
+      background-color: #fff !important;
+  }
+  
+ body{
+ font: 400 15px Lato, sans-serif;
+ padding-top:4.75em;
+ background-color:#dbf0fd;
+ align:center;
+ }
+
+.panel-default > .panel-heading-custom {
+background: #FF8C00; color: #fff;
+
+margin-top:0em;
+
+ }
+
+padding-heading-custom h3
+ {
+ margin-top:0px;
+ }
+ .panel-body {
+  /* height: 480px; */
+  height: calc(100vh - 200px);
+  overflow-y: auto; 
+}
+.img-wrapper {
+  position: relative;
+ }
+
+.img-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.img-overlay:before {
+  content: ' ';
+  display: block;
+  /* adjust 'height' to position overlay content vertically */
+  height: 50%;
+}
+ 
+<body>
+ 
+</style>
+		  
+  <!-- Navbar -->
+ <nav class="navbar navbar-inverse navbar-fixed-top"  >
+  <div class="container-fluid" style="background-color:#FF8C00;">
+    <div class="navbar-header" >
+      <a class="navbar-brand" href="#" style="background-color:#FF8C00;  font-size:1.75em;">Online Game Center </a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Games</a></li>
+      <li><a href="#">Score Board</a></li>
+	  <li><a href="#">About Us</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right" style="background-color:#FF8C00">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+	
+	 <form class="navbar-form navbar-right" style="background-color:#FF8C00" >
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search">
+        <div class="input-group-btn">
+          <button class="btn btn-default" type="submit">
+            <i class="glyphicon glyphicon-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+   </div>
+</nav>
+
+ <!-- Image -->
+ <div class="container" id="image">
+ 
+    <img src="logo.jpg" class="img-responsive" alt="logo" width="1200" height="500" > 
+ </div>
+ 
+ 
+  <!-- conatiner1 -->
+ <div class="container" id="main" style="padding-top:1.5em"> 
+ <div class="panel panel-default" >
+   <div class="panel-heading panel-heading-custom">
+       <h3 class="panel-title">New Games</h3>
+   </div>
+   <div class="panel-body">
+    <div class="row">
+    <div class="col-lg-3" class="img-wrapper" >.
+	  <img src="Ludo_board.png" class="img-responsive" alt="Ludo" id="image1" style="height:260px;"  >
+	  <div class="img-overlay">
+      <button class="btn btn-md btn-success">Play</button>
+	  </div>
+	</div>
+    <div class="col-lg-3" class="img-wrapper"  >
+	   <img src="cracker-barrel-peg-game.jpg" class="img-responsive" alt="Peg" id="image2" style="margin-top:25px;" >	
+	    <div class="img-overlay">
+      <button class="btn btn-md btn-success">Play</button>
+	  </div>
+	   
+	</div>
+    <div class="col-lg-3" class="img-wrapper"   >
+	   <img src="coppit .jpg" class="img-responsive" alt="coppit" id="image3" style="height:250px;margin-top:25px;" >	
+	    <div class="img-overlay">
+      <button class="btn btn-md btn-success">Play</button>
+	  </div>
+	</div>
+	<div class="col-lg-3" class="img-wrapper" >
+	
+	   <img src="tictactoe.jpg" class="img-responsive" alt="Peg" id="image4" style="margin-top:25px;" >	
+	      <div class="img-overlay">
+      <button class="btn btn-md btn-success">Play</button>
+	  </div>
+	</div>
+  </div>
+   </div>
+   </div>
+</div>
+
+ <!-- container2 -->
+<div class="container" id="main" > 
+ <div class="panel panel-default"  >
+   <div class="panel-heading panel-heading-custom">
+       <h3 class="panel-title">Highest Rated Games</h3>
+   </div>
+   <div class="panel-body">
+    <div class="row">
+    <div class="col-lg-3" class="img-wrapper" >.
+	  <img src="Ludo_board.png" class="img-responsive" alt="Ludo" id="image1" style="height:260px;"  >
+	  <div class="img-overlay">
+      <button class="btn btn-md btn-success">Play</button>
+	  </div>
+	</div>
+    <div class="col-lg-3" class="img-wrapper"  >
+	   <img src="cracker-barrel-peg-game.jpg" class="img-responsive" alt="Peg" id="image2" style="margin-top:25px;" >	
+	    <div class="img-overlay">
+      <button class="btn btn-md btn-success">Play</button>
+	  </div>
+	   
+	</div>
+    <div class="col-lg-3" class="img-wrapper"   >
+	   <img src="coppit .jpg" class="img-responsive" alt="coppit" id="image3" style="height:250px;margin-top:25px;" >	
+	    <div class="img-overlay">
+      <button class="btn btn-md btn-success">Play</button>
+	  </div>
+	</div>
+	<div class="col-lg-3" class="img-wrapper" >
+	
+	   <img src="tictactoe.jpg" class="img-responsive" alt="Peg" id="image4" style="margin-top:25px;" >	
+	      <div class="img-overlay">
+      <button class="btn btn-md btn-success">Play</button>
+	  </div>
+	</div>
+  </div>
+   </div>
+   </div>
+</div>
+
+
+ <!-- Review -->
+<div class="container" >
+    <section >
+	    <div class="page-header" id="review">
+		  <h3> Review  <small> check out the awesome Review </small> </h3>
+
+		</div>
+		<div class="row">
+	        <div class="col-lg-3" class="img-wrapper" >
+			   <blockquote>
+			     <p>
+			          Beautiful Amazing Lovely Game!!!!!!!!! Omg, 
+			           I'm so in love with this game. I wish I could play this game every day and night.
+			    </p>
+			 
+			    <footer> John doe </footer>
+			   </blockquote>
+		    </div>
+			
+			<div class="col-lg-3" class="img-wrapper" >
+                <blockquote>
+			      <p>
+			         I luv it sooooooooooooooooooooo
+					 
+					 much that I can't even tell u guys
+
+			     </p>
+			     <footer> Ian Tech </footer>
+			    </blockquote>
+		    </div>
+			<div class="col-lg-3" class="img-wrapper" >
+			  <blockquote>
+			       <p>
+                          Sad childhood Yep. I don't need a pencil and paper anymore.
+						  I would tend to bring a pencil and pad to do it on long rides but whenever I wanted to play,
+						  sometimes no one wanted to play with me when I was younger.
+						  Mainly because they were to busy on something else or something. 
+						  Now I can play this on my phone and it's a one player or two player and is entertaining.
+						  I like playing against the computer.
+					 </p>
+						  
+			       <footer> Kathy Noe</footer>
+			   </blockquote>
+		    </div>
+			<div class="col-lg-3" class="img-wrapper" >
+			  <blockquote>
+			       <p>
+			            Good App This app has very few frills, and it serves its main purpose quite well.
+						It generally loads quickly, etc. However, it would be nice if there was a wider range 
+						of difficulty settings in single player mode. Overall, for any one wanting to play Tic Tac Toe on their phones, 
+						this is the way to go.
+			      </p>
+			       <footer> Ridder Teck </footer>
+			   </blockquote>
+		    </div>
+			
+			
+			
+		</div>
+	</div>	
+<!-- footer -->	
+	</section >
+	   <a href="#" style="margin-left:35em;margin-right:2em;">Contact</a>
+	    <a href="#" style="margin-left:1.5em;margin-right:2,25em;">Policy</a>
+		<a href="#" style="margin-left:3em;margin-right:2.25em;"> SiteMap</a>
+		<a href="#" style="margin-left:1.5em;margin-right:2.25em;">Terms</a>
+	  
+	</section>
+
+
+
+ 
+ <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+ 
+ 
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>

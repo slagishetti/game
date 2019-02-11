@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" 
+              integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  	
+ <link rel="stylesheet" href="style.css" />
+</head>	
+<style>
+
+.navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+  }
+
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #f4511e !important;
+      background-color: #fff !important;
+  }
+  
+ body{
+ font: 400 15px Lato, sans-serif;
+ padding-top:4.75em;
+ background-color:#dbf0fd;
+ align:center;
+ }
+
+.img-overlay
+{
+margin-left:7em;
+margin-top:.5em;
+
+}
+
+ .img-responsive
+ {
+ height:18em;
+ width:18em;
+ margin-top:2em;
+ margin-right:10em;
+ margin-bottom:1em;
+ 
+ }
+ 
+ 
+<body>
+ 
+</style>
+
+
+		  
+  <!-- Navbar -->
+ <nav class="navbar navbar-inverse navbar-fixed-top"  >
+  <div class="container-fluid" style="background-color:#FF8C00;">
+    <div class="navbar-header" >
+      <a class="navbar-brand" href="#" style="background-color:#FF8C00;  font-size:1.75em;">Online Game Center </a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Games</a></li>
+      <li><a href="#">Score Board</a></li>
+	  <li><a href="#">About Us</a></li>
+    </ul>
+	 <ul class="nav navbar-nav navbar-right" style="color:white;margin-right:8em">
+    <li > Hi </li>
+	</ul>
+   </div>
+</nav>
+
+<div class="container"  >
+
+<button type="button" class="btn btn-primary active"  style="margin-left:75em;">My Profile</button>
+</div>
+<div class="container" style="text-align:center;"  >
+
+<h2> Chess</h2>
+
+</div>
+<section >
+<div class="container"  >
+
+
+ <h3>Equipment</h3>
+  A board containing 64 squares of alternating colors.
+
+ <h3> Instrcutions</h3> 
+ 1)Sixteen "white" and sixteen "black" pieces are placed on the board at the beginning of the game.
+ <br>2)The board is placed so that a white square is in each player's near-right corner
+ <br>3)For each side one king, one queen, two rooks, two bishops, two knights, and eight pawns.
+<br>4) The rooks are placed on the outside corners, right and left edge.
+<br>5)The knights are placed immediately inside of the rooks.
+<br>6)The bishops are placed immediately inside of the knights.
+<br>7)The queen is placed on the central square of the same color of that of the player: white queen on the white square and black queen on the black square.
+<br>8)The king takes the vacant spot next to the queen.
+<br>9)The pawns are placed one square in front of all of the other pieces.
+<br>10)The king moves exactly one square horizontally, vertically, or diagonally.
+<br>11)A rook moves any number of vacant squares in a horizontal or vertical direction. 
+<br>12)A bishop moves any number of vacant squares in any diagonal direction.
+<br>13)The queen moves any number of vacant squares in a horizontal, vertical, or diagonal direction.
+<br>14)A knight moves  in an "L" pattern
+<br>15)A pawn moves straight forward one square, if that square is vacant. 
+<br>  If it has not yet moved, a pawn also has the option of moving two squares straight forward,
+ <br>provided both squares are vacant. Pawns cannot move backwards.
+
+<h3>Winning</h3>
+
+ The player who checkmate the other king.
+
+</div>
+</section>
+
+<div class="col-lg-12" class="img-wrapper"  >
+    <img src="chess.jpg" class="img-responsive" alt="chess" id="image6" style="margin-left:30em;" >	
+	
+	   
+</div>	   
+	  <div class="img-overlay" style="margin-left:38em;" >
+      <button class="btn btn-md btn-success">Play</button>
+	  
+	</div>
+	
+
+<!------------container------->
+
+<div class="container" style="margin-top:2em;">
+
+<h3 style="color: blue-violet;text-align: center;">COMMENT BOX</h3>
+<!-------Wrap------------>
+<div id="wrap">
+
+
+<p>Your email address will not be published. Required fields are marked *</p>
+
+<!------------Form Start---------->
+
+<div id='form'>
+<div class="row">
+<div class="col-md-12">
+
+<form action="" method="POST" id="commentform">
+
+<div id="comment-name" class="form-row">
+<input type = "text" placeholder = "Name (required)" name = "dname"  id = "name" >
+</div>
+<div id="comment-email" class="form-row">
+<input type = "text" placeholder = "Mail (will not be published) (required)" name = "demail"  id = "email">
+</div>
+
+<div id="Review" class="form-row">
+<textarea name = "comment" placeholder = "Review" id = "comment" ></textarea>
+</div>
+<a href="#"><input type="submit" name="dsubmit" id="commentSubmit" value="Submit Comment"></a>
+<input style="width: 30px" type="checkbox" value="1" name="subscribe" id="subscribe" checked="checked">
+<p1><b>Notify me when new comments are added.</b></p1>
+</form>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+</div>
+</body>
+</html>	
+	
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+ 
+ 
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>

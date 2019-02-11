@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" 
+              integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  	
+ <link rel="stylesheet" href="style.css" />
+</head>	
+<style>
+
+.navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+  }
+
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #f4511e !important;
+      background-color: #fff !important;
+  }
+  
+ body{
+ font: 400 15px Lato, sans-serif;
+ padding-top:4.75em;
+ background-color:#dbf0fd;
+ align:center;
+ }
+
+.img-overlay
+{
+margin-left:7em;
+margin-top:.5em;
+
+}
+
+ .img-responsive
+ {
+ height:18em;
+ width:18em;
+ margin-top:2em;
+ margin-right:10em;
+ margin-bottom:1em;
+ 
+ }
+ 
+ 
+<body>
+ 
+</style>
+
+
+		  
+  <!-- Navbar -->
+ <nav class="navbar navbar-inverse navbar-fixed-top"  >
+  <div class="container-fluid" style="background-color:#FF8C00;">
+    <div class="navbar-header" >
+      <a class="navbar-brand" href="#" style="background-color:#FF8C00;  font-size:1.75em;">Online Game Center </a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Games</a></li>
+      <li><a href="#">Score Board</a></li>
+	  <li><a href="#">About Us</a></li>
+    </ul>
+	 <ul class="nav navbar-nav navbar-right" style="color:white;margin-right:8em">
+    <li > Hi </li>
+	</ul>
+   </div>
+</nav>
+
+<div class="container"  >
+
+<button type="button" class="btn btn-primary active"  style="margin-left:75em;">My Profile</button>
+</div>
+<div class="container" style="text-align:center;"  >
+
+<h2> Coppit</h2>
+
+</div>
+<section >
+<div class="container"  >
+
+
+ <h3>Equipment</h3>
+ Coppit is a roll-and-move game for 2 to 6 players. Each player has four cone-shaped pieces 
+<br> that stack when placed on top of each other. The board consists of a series of pathways, 
+<br> laid out in the shape of a wheel. Each player starts with his pieces on his home space. 
+ <br>(The coloured "doors" in the picture below). The aim of the game is to move around the 
+ <br>pathways 'copping' your opponents pieces by landing on top of them, then racing to get the 
+ <br>captured pieces back to your home, where they will be taken out of play. The winner is
+<br> the last player to have any pieces in play.
+
+
+ 
+ <h3> Instrcutions</h3> 
+
+  1)Players roll the die. Highest roll starts.
+<br> 2) On his turn, a player rolls the die. He can move any one piece the exact number of spaces as
+  <br> shown on the die. If a 6 was rolled, the player moves his piece then immediately rolls again.
+<br> 3)Pieces may not reverse direction in the middle of a move.
+<br> 4)If the player can land on the same space as an opponent's piece, by exact count,
+<br> then the player 'cops' his opponent's piece by placing his piece on top.
+ <br>5)A stack of pieces is controlled by the player whose piece is at the top of the stack.
+<br> The stack is moved as a single unit.
+ <br>6)If, when 'copping' an opponent's stack, the player captures pieces of his own colour,
+<br> those pieces are immediately freed (removed from the stack) and placed on the same space.
+<br> 7)The 'birdsnest' spaces (pink spaces in some editions) are 'safe' spaces -- pieces on these spaces cannot be captured.
+<br> 8)If a player can move a stack into his home base, all opponent's pieces are permanently captured and removed from the game.
+<br> 9)An exact count is not required to get home. If, for example, a player is 2 spaces away and throws a 5,
+<br> he moves 2 spaces into home (leaving permanently captured pieces there) then moves another 3 spaces out again.
+ <br>10)When a player's last piece is captured, he is out of the game.
+
+
+
+
+<h3>Winning</h3>
+
+<br> The winner is the last player to have pieces left in the game.
+
+
+
+
+
+</div>
+</section>
+
+<div class="col-lg-12" class="img-wrapper"  >
+      <img src="coppit .jpg" class="img-responsive" alt="coppit" id="image3" style="margin-left:30em;"  >
+	
+	   	
+</div>	   
+	  <div class="img-overlay" style="margin-left:38em;" >
+      <button class="btn btn-md btn-success">Play</button>
+	  
+	</div>
+	
+
+<!------------container------->
+
+<div class="container" style="margin-top:2em;">
+
+<h3 style="color: blue-violet;text-align: center;">COMMENT BOX</h3>
+<!-------Wrap------------>
+<div id="wrap">
+
+
+<p>Your email address will not be published. Required fields are marked *</p>
+
+<!------------Form Start---------->
+
+<div id='form'>
+<div class="row">
+<div class="col-md-12">
+
+<form action="" method="POST" id="commentform">
+
+<div id="comment-name" class="form-row">
+<input type = "text" placeholder = "Name (required)" name = "dname"  id = "name" >
+</div>
+<div id="comment-email" class="form-row">
+<input type = "text" placeholder = "Mail (will not be published) (required)" name = "demail"  id = "email">
+</div>
+
+<div id="Review" class="form-row">
+<textarea name = "comment" placeholder = "Review" id = "comment" ></textarea>
+</div>
+<a href="#"><input type="submit" name="dsubmit" id="commentSubmit" value="Submit Comment"></a>
+<input style="width: 30px" type="checkbox" value="1" name="subscribe" id="subscribe" checked="checked">
+<p1><b>Notify me when new comments are added.</b></p1>
+</form>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+</div>
+</body>
+</html>	
+	
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+ 
+ 
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
